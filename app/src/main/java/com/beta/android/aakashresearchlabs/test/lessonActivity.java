@@ -3,14 +3,10 @@ package com.beta.android.aakashresearchlabs.test;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.AdapterViewFlipper;
 import android.widget.TextView;
 
 
 public class lessonActivity extends AppCompatActivity {
-
-    private AdapterViewFlipper Flipper;
-    private float initialX,finalX;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +18,8 @@ public class lessonActivity extends AppCompatActivity {
         String lname = gi.getStringExtra("lname");
         String title = gi.getStringExtra("title");
 
-        //setting activity label
+
+                //setting activity label
         setTitle(title);
 
         //setting lesson number

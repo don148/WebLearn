@@ -1,4 +1,4 @@
-package com.beta.android.aakashresearchlabs.test;
+package com.beta.android.aakashresearchlabs.test.lessons;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,10 +7,15 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.beta.android.aakashresearchlabs.test.R;
+import com.beta.android.aakashresearchlabs.test.customAdapters.indexAdapter;
+import com.beta.android.aakashresearchlabs.test.customClasses.indexclass;
+import com.beta.android.aakashresearchlabs.test.lessonActivity;
+
 import java.util.ArrayList;
 
 
-public class BackEndActivity extends AppCompatActivity {
+public class ImportantActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +27,7 @@ public class BackEndActivity extends AppCompatActivity {
         //set menu list adapter
 
         final ArrayList<indexclass> list = new ArrayList<indexclass>();
+
         list.add(new indexclass("Lesson 1",1));
         list.add(new indexclass("Lesson 2",2));
         list.add(new indexclass("Lesson 3",3));

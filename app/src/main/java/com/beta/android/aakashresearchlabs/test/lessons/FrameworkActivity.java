@@ -1,4 +1,4 @@
-package com.beta.android.aakashresearchlabs.test;
+package com.beta.android.aakashresearchlabs.test.lessons;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,10 +7,15 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.beta.android.aakashresearchlabs.test.R;
+import com.beta.android.aakashresearchlabs.test.customAdapters.indexAdapter;
+import com.beta.android.aakashresearchlabs.test.customClasses.indexclass;
+import com.beta.android.aakashresearchlabs.test.lessonActivity;
+
 import java.util.ArrayList;
 
 
-public class ImportantActivity extends AppCompatActivity {
+public class FrameworkActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +38,6 @@ public class ImportantActivity extends AppCompatActivity {
         list.add(new indexclass("Lesson 8",8));
         list.add(new indexclass("Lesson 9",9));
         list.add(new indexclass("Lesson 10",10));
-
         indexAdapter adapter = new indexAdapter(this,list);
         ListView section = (ListView) findViewById(R.id.menu_list_section);
         section.setAdapter(adapter);

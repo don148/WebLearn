@@ -1,4 +1,4 @@
-package com.beta.android.aakashresearchlabs.test;
+package com.beta.android.aakashresearchlabs.test.lessons;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,14 +7,19 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.beta.android.aakashresearchlabs.test.R;
+import com.beta.android.aakashresearchlabs.test.customAdapters.indexAdapter;
+import com.beta.android.aakashresearchlabs.test.customClasses.indexclass;
+import com.beta.android.aakashresearchlabs.test.lessonActivity;
+
 import java.util.ArrayList;
 
 
-public class BasicActivity extends AppCompatActivity {
+public class GitBasicActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.setContentView(R.layout.index);
+        setContentView(R.layout.index);
 
         //get title to set label in lesson activity
         final String title = getTitle().toString();

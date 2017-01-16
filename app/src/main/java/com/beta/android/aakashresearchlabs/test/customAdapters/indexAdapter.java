@@ -1,4 +1,4 @@
-package com.beta.android.aakashresearchlabs.test;
+package com.beta.android.aakashresearchlabs.test.customAdapters;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -6,6 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import com.beta.android.aakashresearchlabs.test.R;
+import com.beta.android.aakashresearchlabs.test.customClasses.indexclass;
 
 import java.util.ArrayList;
 

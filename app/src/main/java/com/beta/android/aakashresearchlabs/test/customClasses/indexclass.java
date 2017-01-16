@@ -1,4 +1,4 @@
-package com.beta.android.aakashresearchlabs.test;
+package com.beta.android.aakashresearchlabs.test.customClasses;
 
 public class indexclass {
 
@@ -17,5 +17,6 @@ public class indexclass {
     public  int getmLessonNum(){
         return mLessonNum;
     }
+
 
 }

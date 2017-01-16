@@ -1,4 +1,4 @@
-package com.beta.android.aakashresearchlabs.test;
+package com.beta.android.aakashresearchlabs.test.lessons;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import com.beta.android.aakashresearchlabs.test.R;
+import com.beta.android.aakashresearchlabs.test.customAdapters.indexAdapter;
+import com.beta.android.aakashresearchlabs.test.customClasses.indexclass;
+import com.beta.android.aakashresearchlabs.test.lessonActivity;
 
 import java.util.ArrayList;
 

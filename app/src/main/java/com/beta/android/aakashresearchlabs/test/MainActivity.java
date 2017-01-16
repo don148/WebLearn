@@ -16,6 +16,15 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.beta.android.aakashresearchlabs.test.customAdapters.wordAdapter;
+import com.beta.android.aakashresearchlabs.test.customClasses.wordclass;
+import com.beta.android.aakashresearchlabs.test.lessons.BackEndActivity;
+import com.beta.android.aakashresearchlabs.test.lessons.BasicActivity;
+import com.beta.android.aakashresearchlabs.test.lessons.FrameworkActivity;
+import com.beta.android.aakashresearchlabs.test.lessons.FrontEndActivity;
+import com.beta.android.aakashresearchlabs.test.lessons.GitBasicActivity;
+import com.beta.android.aakashresearchlabs.test.lessons.ImportantActivity;
+
 import java.util.ArrayList;
 
 import static com.beta.android.aakashresearchlabs.test.R.layout.activity_main;
@@ -64,7 +73,6 @@ public class MainActivity extends AppCompatActivity
 
 
         //opening new activity for every item on menu list
-
         section.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
@@ -117,15 +125,31 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        Intent intent;
+
+        if (id == R.id.test)
+        {
+            intent = new Intent(getApplicationContext(),TestActivity.class);
+            startActivity(intent);
+        }
+
+        else if (id == R.id.nav_camera) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        }
 
-        } else if (id == R.id.nav_slideshow) {
+        else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_share) {
+        }
 
-        } else if (id == R.id.nav_send) {
+        else if (id == R.id.nav_slideshow) {
+
+        }
+
+        else if (id == R.id.nav_share) {
+
+        }
+
+        else if (id == R.id.nav_send) {
 
         }
 

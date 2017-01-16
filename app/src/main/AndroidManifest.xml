@@ -18,37 +18,41 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BasicActivity"
+        <activity android:name=".lessons.BasicActivity"
             android:label="Basic"
             android:parentActivityName=".MainActivity"
             android:theme="@style/itemMenu"
             />
-        <activity android:name=".GitBasicActivity"
+        <activity android:name=".lessons.GitBasicActivity"
             android:label="Git Basic"
             android:parentActivityName=".MainActivity"
             android:theme="@style/itemMenu"
             />
-        <activity android:name=".FrontEndActivity"
+        <activity android:name=".lessons.FrontEndActivity"
             android:label="Front End"
             android:parentActivityName=".MainActivity"
             android:theme="@style/itemMenu"
             />
-        <activity android:name=".BackEndActivity"
+        <activity android:name=".lessons.BackEndActivity"
             android:label="Back End"
             android:parentActivityName=".MainActivity"
             android:theme="@style/itemMenu"
             />
-        <activity android:name=".FrameworkActivity"
+        <activity android:name=".lessons.FrameworkActivity"
             android:label="Framework"
             android:parentActivityName=".MainActivity"
             android:theme="@style/itemMenu"
             />
-        <activity android:name=".ImportantActivity"
+        <activity android:name=".lessons.ImportantActivity"
             android:label="Important"
             android:parentActivityName=".MainActivity"
             android:theme="@style/itemMenu"
             />
         <activity android:name=".lessonActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/itemMenu"
+            />
+        <activity android:name=".TestActivity"
             android:parentActivityName=".MainActivity"
             android:theme="@style/itemMenu"
             />

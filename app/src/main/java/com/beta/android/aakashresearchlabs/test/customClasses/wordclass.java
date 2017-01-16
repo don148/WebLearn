@@ -1,4 +1,4 @@
-package com.beta.android.aakashresearchlabs.test;
+package com.beta.android.aakashresearchlabs.test.customClasses;
 
 public class wordclass {
 
@@ -10,6 +10,9 @@ public class wordclass {
         mItemName = itemName;
         mBg = bg;
         mCls = cls;
+    }
+    public wordclass(int itemName){
+        mItemName = itemName;
     }
 
     public Class<?> getmCls(){
