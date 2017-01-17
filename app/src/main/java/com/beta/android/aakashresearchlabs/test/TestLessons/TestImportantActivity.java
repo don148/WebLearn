@@ -1,4 +1,4 @@
-package com.beta.android.aakashresearchlabs.test.lessons;
+package com.beta.android.aakashresearchlabs.test.TestLessons;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,20 +6,26 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.beta.android.aakashresearchlabs.test.R;
+import com.beta.android.aakashresearchlabs.test.TestSeries.Important.l1I;
+import com.beta.android.aakashresearchlabs.test.TestSeries.Important.l2I;
 import com.beta.android.aakashresearchlabs.test.customAdapters.indexAdapter;
 import com.beta.android.aakashresearchlabs.test.customClasses.indexclass;
-import com.beta.android.aakashresearchlabs.test.lessonActivity;
 
 import java.util.ArrayList;
 
 
-public class BackEndActivity extends AppCompatActivity {
+public class TestImportantActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.index);
+
+        //changing index page heading text
+        TextView hd =(TextView) findViewById(R.id.index_heading);
+        hd.setText("Test Lessons");
 
         //get title to set label in lesson activity
         final String title = getTitle().toString();
@@ -27,16 +33,9 @@ public class BackEndActivity extends AppCompatActivity {
         //set menu list adapter
 
         final ArrayList<indexclass> list = new ArrayList<indexclass>();
-        list.add(new indexclass("Lesson 1",1));
-        list.add(new indexclass("Lesson 2",2));
-        list.add(new indexclass("Lesson 3",3));
-        list.add(new indexclass("Lesson 4",4));
-        list.add(new indexclass("Lesson 5",5));
-        list.add(new indexclass("Lesson 6",6));
-        list.add(new indexclass("Lesson 7",7));
-        list.add(new indexclass("Lesson 8",8));
-        list.add(new indexclass("Lesson 9",9));
-        list.add(new indexclass("Lesson 10",10));
+
+        list.add(new indexclass("Lesson 1",l1I.class));
+        list.add(new indexclass("Lesson 2",l2I.class));
 
         indexAdapter adapter = new indexAdapter(this,list);
         ListView section = (ListView) findViewById(R.id.menu_list_section);
@@ -50,11 +49,7 @@ public class BackEndActivity extends AppCompatActivity {
 
                 indexclass w = list.get(position);
 
-                //starting different activities respective to the item clicked
-//                Intent intent = new Intent(getApplicationContext(),w.getmCls());
-//                startActivity(intent);
-
-                Intent intent = new Intent(getApplicationContext(),lessonActivity.class);
+                Intent intent = new Intent(getApplicationContext(),w.getmCls());
                 intent.putExtra("lname",w.getmLessonName());
                 intent.putExtra("title",title);
                 startActivity(intent);

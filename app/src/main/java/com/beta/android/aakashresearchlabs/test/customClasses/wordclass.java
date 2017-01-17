@@ -11,8 +11,9 @@ public class wordclass {
         mBg = bg;
         mCls = cls;
     }
-    public wordclass(int itemName){
+    public wordclass(int itemName, Class<?> cls){
         mItemName = itemName;
+        mCls = cls;
     }
 
     public Class<?> getmCls(){
