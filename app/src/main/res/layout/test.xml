@@ -26,12 +26,31 @@
             android:gravity="center"
             android:textSize="32dp"
             />
+
         <ListView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="9"
             android:id="@+id/test_section"
             />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/submit_button"
+                android:text="Submit"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:background="#1a1a1a"
+                />
+        </RelativeLayout>
 
     </LinearLayout>
 
